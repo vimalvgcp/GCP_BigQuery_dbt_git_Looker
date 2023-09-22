@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+    - name: mn_stores
+      description: This is a replica of the database
+      database: big-query-dbt-looker
+      schema: dbt_bq_looker
+      tables:
+          - name: daily_sales
+            description: Daily Sales Table
+          - name: order_methods
+            description: customer ordered methods 
+          - name: product_details
+            description: Details of Products
+          - name: retailers_details
+            description: Details of Retailers
+              
